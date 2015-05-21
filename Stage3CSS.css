@@ -1,0 +1,66 @@
+/* This text color is specified in what's called "hex". You can find these on the referencewebsite */
+h1 {
+	text-align: center;
+	color: #000080;
+}
+
+/* Fonts can be found on reference website */
+body {
+	font-family: sans-serif;
+}
+
+/* the border-radius attribute makes the corners rounded and the margin clears out space for the stuff inside the lesson divs. Try seeing what  happens when you comment out the rule that says
+
+    padding: 10px; 
+
+by changing it to
+
+	/* padding: 10px; */
+.lesson {
+	background-color: #41533b;
+	border-radius: 70px;
+	color: white;
+	padding: 20px;
+}
+
+/* margins give space between elements */ 
+h2 {
+	margin: 15px;
+}
+
+.concept {
+	background-color: #DFEAF1;
+	padding: 4px;
+	margin: 20px;
+	border-radius: 25px;
+	color: black;
+}
+
+.concept-title {
+	font-size: 20px;
+	margin: 8px;
+	text-align: center;
+	color: #000080;
+}
+
+.concept-description {
+	font-weight: lighter;
+	margin: 6px;
+}
+
+.italic {
+	font-style: italic;
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+	margin: 4px;
+	background-color: gray
+}
+.indent {
+	margin-left: 25px
+}
+.indent2 {
+	margin-left: 75px
+}

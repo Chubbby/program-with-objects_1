@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- This is Martin's stage 3 notes for web page design.  -->
+<html>
+  <head>
+    <title>Martin's Notes</title>
+    <link rel="stylesheet" type="text/css" href="Stage3CSS.css">
+  </head>
+<body> 
+  <h1>Important Points - Stage 3</h1>
+  <!-- This is where we start using <div> to give structure to our page -->
+  <div class="lesson">
+    <h2>Lesson 1 : Intro to Abstraction</h2>
+    <div class="concept">
+      <div class="concept-title">
+        What are Python Functions and what do they do?
+        </div>
+      <div class="concept-description">
+        <p>
+          <span class="italic">Functions</span> are predefined packages of coding that the programmer can use within thier code. This helps reduce the amount of code the programmer has to write and simplifies the readability of the code. The details of the functions are hidden which allows the programmer to focus on the program instead of coding them. This is called <span class="italic">abstraction</span>. 
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Python Functions
+      </div>
+      <div class="concept-description">
+        <p>
+          Some examples of Python functions are <span class="bold">webbrowser</span>, <span class="bold">time</span>, and <span class="bold">os</span>. These functions stored in modules that actually exist in the Python library and have to be imported or called up to the Python file to be used. These modules can have specific sub attributes that can be used once the module has been imported. Such as the <span class="italic">time</span> function has a <span class="italic">sleep</span> attribute which allows suspending of program for a set time that the programmer can define. The <span class="italic">time</span> function also has <span class="italic">ctime</span> attribute which retrieved current time from the PC.  
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Lesson 2: OOP - Object-Oriented Programming</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Using Classes in Programming
+        </div>
+      <div class="concept-description">
+        <p>
+          A <span class="italic">class</span> is a blueprint that contains data and methods which can be used to create an instance or object. These <span class="italic">class</span> modules have to be imported to the program file just like functions had to be imported. The programmer will assign a name to the instance which then would be referred as an <span class="bold">object</span> of the class. In the Python library there is a class called <span class="italic">Turtle</span> and is used for drawing shapes. We could name this instance <span class="italic">brad</span> then define the <span class="bold">pencolor</span>, <span class="bold">fillcolor</span>, and <span class="bold">speed</span>. Then name another instance <span class="italic">jeff</span> and define the same attributes with different values. Now then there are two <span class="italic">objects</span> of Turtle, one named <span class="bold">brad</span> & the other named <span class="bold">jeff</span>. These attributes (<span class="italic">pencolor, fillcolor, and speed</span>) from each object are called <span class="bold">instance variables</span>. These are similiar because they belong to same class but unique to each object because of different name and values assigned. Then the programmer could use each object within the program to draw objects or make designs. This is a basic model of <span class="italic">object oriented programming</span>. All classes contain a method called <span class="italic">__init__</span> which is referred to as the <span class="italic">constructor</span>. This method contains the variables which will be the instance variables for each object created. There is a default variable of <span class="italic">self</span> which is the object's name.   
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Making Classes
+      </div>
+      <div class="concept-description">
+        <p>
+          The Python library has a large selection of classes predefined to use but a programmer can build them too. The <span class="italic">class</span> name should always start with a <span class="bold">capital letter</span> per <span class="italic">Google Python Style Guide</span>. <span class="bold">Class variables</span> should be in <span class="italic">all capital letters</span> per the <span class="italic">Google Python Style Guide</span>. <span class="bold">Class variables</span> are a set of constant values which can be used by all objects of the class. There are default class variables such as <span class="bold">__doc__</span>, <span class="bold">__name__</span>, and <span class="bold">__module__</span> which are on all classes. When building classes the programmer can <span class="italic">inherit methods</span> from another class. This is called <span class="bold">inheritance</span>. This is very similiar to a child inheriting from a parent. The child class could inherit the parent <span class="italic">__init__</span> method and add variables for it's own <span class="italic">__init__</span> method for a combination of both. However the child class could completely define a method with same name as method found in the parent class which is called <span class="bold">method overriding</span>. The child class would use that method instead of the inherited parent method.    
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is OOP- Object Oriented Programming?
+      </div>
+      <div class="concept-description">
+        <p>
+          Pure definition of object-oriented programming is a programming paradigm (pattern) based on the concept of objects which are data structures that contain data known as attributes and code in form of procedures known as methods. In object-oriented programming computer programs are designed by making them out of objects that interact with one another.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        How will OOP- Object Oriented Programming make HTML?
+      </div>
+      <div class="concept-description">
+        <p>
+          The last lesson of the stage we observed Mark build a class that would generarte <span class="italic">HTML</span>. First step of any new coding project is ask yourself <span class="italic">three</span> questions.
+        </p>
+        <p>
+          <span class="indent">1. What are the inputs?</span><br>
+          <span class="indent">2. What will be output?</span><br>
+          <span class="indent">3. How do we take inputs and create an output?</span><br>
+        </p>
+        <p>
+        Then he created his <span class="italic">pseudocode</span> which is basically an outline and helps us to organize the sequence of our code.
+        </p>
+        <p>
+          He built a class named <span class="italic">Concept</span> and the <span class="italic">__init__</span> method had three attributes <span class="bold">self</span>, <span class="bold">title</span>, and <span class="bold">description</span>. Then added methods to take the input text and parse it out in two pieces. One piece was labeled <span class="italic">title</span> and the other piece was labeled <span class="italic">description</span>. Using loops the parsing method separated each different section of the input text into title and description. These two pieces then where used to create an <span class="italic">object</span> from our class. Each extraction would create another object of the class. The final method was generate_html created the final output. 
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Similarities between CSS/HTML and OOP
+      </div>
+      <div class="concept-description">
+        <p>
+          When we use <span class="italic">CSS</span> to control the style of our <span class="italic">HTML</span> file the reference is similar to imorting a class. <span class="italic">Importing</span> a class is the file module where the class is built in. We reference the CSS file in our HTML code which is like the same concept. The CSS file contains various <span class="italic">attributes</span> that we define and this is similar to <span class="italic">attritubes</span> found in class. The HTML coding can call up these attributes to add style to the text. This simiplies the code becasue the style is set in the CSS file once and referenced multiple times just the same as class will be defined once and can have multiple instances of it. 
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Benefits of OOP for Large Programming Projects
+      </div>
+      <div class="concept-description">
+        <p>
+          There are several benefits of <span class="italic">OOP</span> because of the predined classes or previous built classes. First is allow the programmer to focus on overall program and it eliminates them from having to program every detail. This same concept of <span class="italic">prepackaged</span> code helps in other ways too. Such as less code to write will speed up production and development of a working program. When there is less code to write that will reduce the possibilities for errors too. This <span class="italic">prepackaged/modular</span> code will make it easier to maintain changes to the program later on. Instead of making mass changes throughout a program just updating a class makes this much simplier. Since code is being reused it reduced the development time which reduces the cost to develop software.  
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
